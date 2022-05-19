@@ -19,52 +19,49 @@ function Navbar() {
                             <div className='hidden md:block'>
                                 <div className='ml-10 flex items-baseline space-x-4'>
                                     <Link 
-                                        activeClass='Home' 
+                                        activeClass='home' 
                                         to='home' 
                                         smooth={true} 
-                                        offset={50} 
+                                        offset={0} 
                                         duration={500} 
                                         className='cursor-pointer hover:text-blue-600 px-3 py-2 text-md'
                                     >
                                         Home
                                     </Link>
                                     <Link 
-                                        activeClass='About' 
+                                        activeClass='about' 
                                         to='about' 
                                         smooth={true} 
-                                        offset={50} 
+                                        offset={0} 
                                         duration={500} 
                                         className='cursor-pointer hover:text-blue-600 px-3 py-2 text-md'
                                     >
-                                        About
+                                        About Me
                                     </Link>
                                     <Link 
-                                        activeClass='Projects' 
+                                        activeClass='projects' 
                                         to='projects' 
                                         smooth={true} 
-                                        offset={50} 
+                                        offset={0} 
                                         duration={500} 
                                         className='cursor-pointer hover:text-blue-600 px-3 py-2 text-md'
                                     >
                                         Projects
                                     </Link>
-                                    <Link 
-                                        activeClass='Contact' 
-                                        to='contact' 
-                                        smooth={true} 
-                                        offset={50} 
-                                        duration={500} 
-                                        className='cursor-pointer hover:text-blue-600 px-3 py-2 text-md'
-                                    >
-                                        Contact
-                                    </Link>
                                 </div>
                             </div>
 
                             <div className='flex justify-center items-center flex-shrink-0'>
-                                <h1 className='font-semibold text-lg cursor-pointer hidden md:block'>
+                                <Link 
+                                    activeClass='contact' 
+                                    to='contact' 
+                                    smooth={true} 
+                                    offset={0}
+                                    duration={500}
+                                    className='font-semibold text-lg cursor-pointer hidden md:block'
+                                >
                                     Say<span className='text-blue-600'>Hi</span>
-                                </h1>
+                                </Link>
                             </div>
                         </div>
 
@@ -129,10 +126,10 @@ function Navbar() {
                             <div ref={ref} className='bg-white mx-4 mr-20 pt-4 pb-4 space-y-1'>
                                 <Link 
                                     href='/home' 
-                                    activeClass='Home' 
+                                    activeClass='home' 
                                     to='home' 
                                     smooth={true} 
-                                    offset={50}
+                                    offset={0}
                                     duration={500}
                                     className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                                 >
@@ -140,10 +137,10 @@ function Navbar() {
                                 </Link>
                                 <Link 
                                     href='/about' 
-                                    activeClass='About' 
+                                    activeClass='about' 
                                     to='about' 
                                     smooth={true} 
-                                    offset={50}
+                                    offset={0}
                                     duration={500}
                                     className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                                 >
@@ -151,36 +148,24 @@ function Navbar() {
                                 </Link>
                                 <Link 
                                     href='/projects' 
-                                    activeClass='Projects' 
+                                    activeClass='projects' 
                                     to='projects' 
                                     smooth={true} 
-                                    offset={50}
+                                    offset={0}
                                     duration={500}
                                     className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                                 >
                                     Projects
                                 </Link>
                                 <Link 
-                                    href='/contact' 
-                                    activeClass='Contact' 
+                                    activeClass='contact' 
                                     to='contact' 
                                     smooth={true} 
-                                    offset={50}
+                                    offset={0}
                                     duration={500}
                                     className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                                 >
-                                    Contact
-                                </Link>
-                                <Link 
-                                    href='/hi' 
-                                    activeClass='Hi' 
-                                    to='hi' 
-                                    smooth={true} 
-                                    offset={50}
-                                    duration={500}
-                                    className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
-                                >
-                                    Say<span className='text-black'>Hi</span>
+                                    Say Hi
                                 </Link>
                             </div>
                         </div>
