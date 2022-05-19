@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import Navbar from './components/Navbar'
+import Navbar from '../components/Navbar'
+import HeroSection from './HeroSection'
+import AboutMe from './AboutMe'
 
 export default function Home() {
   return (
@@ -10,7 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon-rounded.ico" />
       </Head>
 
-      <Navbar/>
+      <Navbar />
+      <HeroSection />
+      <AboutMe />
 
     </div>
   )
