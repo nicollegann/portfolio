@@ -4,7 +4,7 @@ function Contact() {
     return (
         <Element id='contact' name='contact'>
             <div>
-                <div className='h-screen w-full my-20 flex flex-col justify-center items-center'>
+                <div className='w-full my-36 flex flex-col justify-center items-center'>
                     <p className='text-sm uppercase text-gray-400'>Get in Touch</p>
                     <h1 className='text-indigo-900 text-6xl font-bold text-center'>Contact</h1>
 

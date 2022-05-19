@@ -11,9 +11,18 @@ function Navbar() {
                     <div className='flex items-center h-20 w-full'>
                         <div className='flex items-center sm:mx-10 md:mx-20 justify-between w-full'>
                             <div className='flex justify-center items-center flex-shrink-0'>
-                                <h1 className='font-bold text-xl cursor-pointer'>
-                                    Nic.
-                                </h1>
+                            <Link 
+                                activeClass='home' 
+                                to='home' 
+                                smooth={true} 
+                                offset={-50} 
+                                duration={500} 
+                                className='cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2 text-md'
+                            >
+                            <h1 className='font-bold text-xl cursor-pointer'>
+                                Nic.
+                            </h1>
+                            </Link>
                             </div>
                             
                             <div className='hidden md:block'>
@@ -22,9 +31,9 @@ function Navbar() {
                                         activeClass='home' 
                                         to='home' 
                                         smooth={true} 
-                                        offset={0} 
+                                        offset={-50} 
                                         duration={500} 
-                                        className='cursor-pointer hover:text-blue-600 px-3 py-2 text-md'
+                                        className='cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2 text-md'
                                     >
                                         Home
                                     </Link>
@@ -32,9 +41,9 @@ function Navbar() {
                                         activeClass='about' 
                                         to='about' 
                                         smooth={true} 
-                                        offset={0} 
+                                        offset={-100} 
                                         duration={500} 
-                                        className='cursor-pointer hover:text-blue-600 px-3 py-2 text-md'
+                                        className='cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2 text-md'
                                     >
                                         About Me
                                     </Link>
@@ -42,9 +51,9 @@ function Navbar() {
                                         activeClass='projects' 
                                         to='projects' 
                                         smooth={true} 
-                                        offset={0} 
+                                        offset={-100} 
                                         duration={500} 
-                                        className='cursor-pointer hover:text-blue-600 px-3 py-2 text-md'
+                                        className='cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2 text-md'
                                     >
                                         Projects
                                     </Link>
@@ -56,11 +65,11 @@ function Navbar() {
                                     activeClass='contact' 
                                     to='contact' 
                                     smooth={true} 
-                                    offset={0}
+                                    offset={-100}
                                     duration={500}
-                                    className='font-semibold text-lg cursor-pointer hidden md:block'
+                                    className='font-semibold text-lg cursor-pointer hidden md:block hover:bg-indigo-100'
                                 >
-                                    Say<span className='text-blue-600'>Hi</span>
+                                    Say<span className='text-indigo-600'>Hi</span>
                                 </Link>
                             </div>
                         </div>
@@ -129,7 +138,7 @@ function Navbar() {
                                     activeClass='home' 
                                     to='home' 
                                     smooth={true} 
-                                    offset={0}
+                                    offset={-50}
                                     duration={500}
                                     className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                                 >
@@ -140,7 +149,7 @@ function Navbar() {
                                     activeClass='about' 
                                     to='about' 
                                     smooth={true} 
-                                    offset={0}
+                                    offset={-100}
                                     duration={500}
                                     className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                                 >
@@ -151,7 +160,7 @@ function Navbar() {
                                     activeClass='projects' 
                                     to='projects' 
                                     smooth={true} 
-                                    offset={0}
+                                    offset={-100}
                                     duration={500}
                                     className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                                 >
@@ -161,7 +170,7 @@ function Navbar() {
                                     activeClass='contact' 
                                     to='contact' 
                                     smooth={true} 
-                                    offset={0}
+                                    offset={-100}
                                     duration={500}
                                     className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
                                 >

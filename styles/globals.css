@@ -7,9 +7,12 @@
         @apply w-10 h-10 bg-gray-100 text-gray-600 m-3 p-1 shadow-xl rounded-md
     }
     .icon-label {
-        @apply text-base text-slate-600 font-semibold hover:text-black
+        @apply text-base text-slate-600 font-semibold hover:text-indigo-900 select-none
     }
     .icon-label-set {
         @apply flex justify-center items-center cursor-pointer
+    }
+    .hero-icons {
+        @apply w-10 h-10 text-gray-500 hover:text-indigo-800 cursor-pointer mr-10
     }
 }
