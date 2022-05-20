@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
+import { FiSend } from 'react-icons/fi';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -80,15 +81,20 @@ function Contact() {
     return (
         <Element id='contact' name='contact'>
             <div>
-                <div className='w-1/2 mx-auto my-36 flex flex-col justify-center items-center'>
-                    <p className='text-sm uppercase text-gray-400'>Get in Touch</p>
-                    <h1 className='text-indigo-900 text-6xl font-bold text-center'>Contact</h1>
+                <div className='sm:w-3/4 md:w-7/12 mx-auto mt-36 mb-32 flex flex-col justify-center items-center'>
+                    <p className='text-sm uppercase text-gray-400 select-none'>Get in Touch</p>
+                    <h1 className='text-indigo-900 text-6xl font-bold text-center mb-5 select-none'>Contact</h1>
+                    <p className='text-lg mb-5 leading-loose text-gray-600'>
+                        I'd love to hear from you! 
+                        Let me know your thoughts about my projects or how I can contribute to yours. 
+                        Drop me a message and I'll get back to you soon :D 
+                    </p>
 
                     <div className='flex flex-col w-full my-5 justify-center text-center'>
                         <form>
                             <div className='w-full mb-6'>
                                 <label htmlFor='name' className='block'>
-                                    <span className='block text-left pl-8 text-md font-medium text-slate-700'>Name</span>
+                                    <span className='contact-label'>Name</span>
                                 </label>
                                 <input 
                                     type='text' 
@@ -99,13 +105,13 @@ function Contact() {
                                     onChange={(e) => {setName(e.target.value)}}
                                 />
                                 {errors.name && (
-                                <p className="text-red-500 text-left text-sm">Name cannot be empty.</p>
+                                <p className="contact-error">Name cannot be empty.</p>
                                 )}
                             </div>
                             
                             <div className='w-full mb-6'>
                                 <label htmlFor='email' className='block'>
-                                    <span className='block text-left pl-8 text-md font-medium text-slate-700'>Email</span>
+                                    <span className='contact-label'>Email</span>
                                 </label>
                                 <input 
                                     type='text' 
@@ -116,13 +122,13 @@ function Contact() {
                                     onChange={(e) => {setEmail(e.target.value)}}
                                 />
                                 {errors.email && (
-                                    <p className="text-red-500 text-left text-sm">Email cannot be empty.</p>
+                                    <p className="contact-error">Email cannot be empty.</p>
                                 )} 
                             </div>
                             
                             <div className='w-full mb-6'>
                                 <label htmlFor='subject' className='block'>
-                                    <span className='block text-left pl-8 text-md font-medium text-slate-700'>Subject</span>
+                                    <span className='contact-label'>Subject</span>
                                 </label>
                                 <input 
                                     type='text' 
@@ -132,13 +138,13 @@ function Contact() {
                                     onChange={(e) => {setSubject(e.target.value)}}
                                 />
                                 {errors.subject && (
-                                    <p className="text-red-500 text-left text-sm">Subject cannot be empty.</p>
+                                    <p className="contact-error">Subject cannot be empty.</p>
                                 )}
                             </div>
                             
                             <div className='w-full mb-6'>
                                 <label htmlFor='message' className='block'>
-                                    <span className='block text-left pl-8 text-md font-medium text-slate-700'>Message</span>
+                                    <span className='contact-label'>Message</span>
                                 </label>
                                 <textarea 
                                     name='message' 
@@ -147,24 +153,27 @@ function Contact() {
                                     onChange={(e) => {setMessage(e.target.value)}}
                                 />
                                 {errors.message && (
-                                    <p className="text-red-500 text-left text-sm">Message body cannot be empty.</p>
+                                    <p className="contact-error">Message body cannot be empty.</p>
                                 )}
                             </div>
                             <button 
                                 type='submit'
-                                className='rounded-md mt-5 text-lg w-36 h-10 bg-indigo-900 text-white'
+                                className='font-medium rounded-md mt-5 w-32 h-10 bg-indigo-900 text-white hover:bg-indigo-800'
                                 onClick={handleSubmit}
                             >
-                                {buttonText}
+                                <div className='flex justify-center'>
+                                    <FiSend className='w-5 h-5 text-gray-50 mr-2 my-auto' />
+                                    {buttonText}
+                                </div>
                             </button>
                         </form>
                         {showSuccessMessage  && 
-                            <div className='p-4 mt-4 text-sm text-green-700 bg-green-100 rounded-lg'>
+                            <div className='p-2 mt-4 text-teal-800 bg-teal-100 rounded-lg'>
                                 Message sent successfully!
                             </div> 
                         }
                         {showFailureMessage && 
-                            <div className='p-4 mt-4 text-sm text-red-700 bg-red-100 rounded-lg dark:bg-red-200'>
+                            <div className='p-2 mt-4 text-red-800 bg-red-100 rounded-lg'>
                                 Error sending message. Please try again in a while!
                             </div>
                         }

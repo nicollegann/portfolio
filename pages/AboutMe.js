@@ -8,8 +8,8 @@ function AboutMe() {
     return (
         <Element id='about' name='about'>
             <div className='w-3/4 mx-auto my-36 flex flex-col justify-center items-center'>
-                <p className='text-sm uppercase text-gray-400'>values and passion</p>
-                <h1 className='text-indigo-900 text-6xl font-bold text-center'>About Me</h1>
+                <p className='text-sm uppercase text-gray-400 select-none'>values and passion</p>
+                <h1 className='text-indigo-900 text-6xl font-bold text-center select-none'>About Me</h1>
             
                 <div className='w-full'>
                     {/* for medium and small screens*/}

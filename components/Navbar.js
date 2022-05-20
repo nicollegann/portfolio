@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react'; // for smooth transition between elements
-import { Link } from 'react-scroll'; // for smooth scrolling 
+import { Link } from 'react-scroll'; // for smooth scrolling
+import { BiMessageDetail } from 'react-icons/bi'; 
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ function Navbar() {
                                 smooth={true} 
                                 offset={-50} 
                                 duration={500} 
-                                className='cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2 text-md'
+                                className='nav-link'
                             >
                             <h1 className='font-bold text-xl cursor-pointer'>
                                 Nic.
@@ -33,7 +34,7 @@ function Navbar() {
                                         smooth={true} 
                                         offset={-50} 
                                         duration={500} 
-                                        className='cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2 text-md'
+                                        className='nav-link'
                                     >
                                         Home
                                     </Link>
@@ -43,7 +44,7 @@ function Navbar() {
                                         smooth={true} 
                                         offset={-100} 
                                         duration={500} 
-                                        className='cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2 text-md'
+                                        className='nav-link'
                                     >
                                         About Me
                                     </Link>
@@ -53,7 +54,7 @@ function Navbar() {
                                         smooth={true} 
                                         offset={-100} 
                                         duration={500} 
-                                        className='cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2 text-md'
+                                        className='nav-link'
                                     >
                                         Projects
                                     </Link>
@@ -69,7 +70,10 @@ function Navbar() {
                                     duration={500}
                                     className='font-semibold text-lg cursor-pointer hidden md:block hover:bg-indigo-100'
                                 >
-                                    Say<span className='text-indigo-600'>Hi</span>
+                                    <div className='flex'>
+                                        <BiMessageDetail className='w-5 h-5 text-black mr-1 my-auto'/>
+                                        Say<span className='text-indigo-600'>Hi</span>
+                                    </div>
                                 </Link>
                             </div>
                         </div>
@@ -140,7 +144,7 @@ function Navbar() {
                                     smooth={true} 
                                     offset={-50}
                                     duration={500}
-                                    className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                                    className='nav-link-mobile'
                                 >
                                     Home
                                 </Link>
@@ -151,7 +155,7 @@ function Navbar() {
                                     smooth={true} 
                                     offset={-100}
                                     duration={500}
-                                    className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                                    className='nav-link-mobile'
                                 >
                                     About
                                 </Link>
@@ -162,7 +166,7 @@ function Navbar() {
                                     smooth={true} 
                                     offset={-100}
                                     duration={500}
-                                    className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                                    className='nav-link-mobile'
                                 >
                                     Projects
                                 </Link>
@@ -172,7 +176,7 @@ function Navbar() {
                                     smooth={true} 
                                     offset={-100}
                                     duration={500}
-                                    className='cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+                                    className='nav-link-mobile'
                                 >
                                     Say Hi
                                 </Link>
