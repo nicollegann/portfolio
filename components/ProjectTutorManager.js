@@ -116,7 +116,7 @@ function ProjectTutorManager() {
                                         <span className='font-semibold'>Main features</span> include attendance taking, recording tutee observations, feedback to admins and lesson scheduling.
                                     </p> 
                                     <p>
-                                        This project is part of  <a href='https://orbital.comp.nus.edu.sg/' target='_blank' className='font-semibold ml-1 hover:text-indigo-700'> Orbital</a>.
+                                        This project is part of <a href='https://orbital.comp.nus.edu.sg/' target='_blank' className='font-semibold ml-0.5 hover:text-indigo-700'> Orbital</a>.
                                     </p>
                                 </div>
                                 <div className='flex flex-wrap gap-5'>
