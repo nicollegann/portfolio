@@ -80,10 +80,10 @@ function ProjectTutorManager() {
                                     </h3>
                                     <button 
                                         type='button' 
-                                        class='project-modal-button'
+                                        className='project-modal-button'
                                         onClick={() => setShowModal(false)}
                                     >
-                                        <svg className='w-5 h-5' fill='currentColor' viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"></path></svg>  
+                                        <svg className='w-5 h-5' fill='currentColor' viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"></path></svg>  
                                     </button>
                                 </div>
                                 <div className='flex gap-10'>
@@ -116,19 +116,19 @@ function ProjectTutorManager() {
                                         <span className='font-semibold'>Main features</span> include attendance taking, recording tutee observations, feedback to admins and lesson scheduling.
                                     </p> 
                                     <p>
-                                        This project is part of <a href='https://orbital.comp.nus.edu.sg/' target='_blank' className='font-semibold ml-0.5 hover:text-indigo-700'> Orbital</a>.
+                                        This project is part of <a href='https://orbital.comp.nus.edu.sg/' target='_blank' rel='noreferrer' className='font-semibold ml-0.5 hover:text-indigo-700'> Orbital</a>.
                                     </p>
                                 </div>
                                 <div className='flex flex-wrap gap-5'>
-                                    <a href='https://tutor-manager.vercel.app/' target='_blank' className='project-modal-link-button'>
+                                    <a href='https://tutor-manager.vercel.app/' target='_blank' rel='noreferrer' className='project-modal-link-button'>
                                         <FaLaptopCode className='mr-2 text-gray-700' />
                                         Website
                                     </a>
-                                    <a href='https://github.com/nicollegann/Orbital' target='_blank' className='project-modal-link-button'>
+                                    <a href='https://github.com/nicollegann/Orbital' target='_blank' rel='noreferrer' className='project-modal-link-button'>
                                         <SiGithub className='mr-2 text-gray-700' />
                                         Github
                                     </a>
-                                    <a href='https://drive.google.com/file/d/16-oovXs7tlgv-Ew772iiMdS5yNoerJqV/view?usp=sharing' target='_blank' className='project-modal-link-button'>
+                                    <a href='https://drive.google.com/file/d/16-oovXs7tlgv-Ew772iiMdS5yNoerJqV/view?usp=sharing' target='_blank' rel='noreferrer' className='project-modal-link-button'>
                                         <GrDocument className='mr-2 text-gray-700' />
                                         Documentation
                                     </a>

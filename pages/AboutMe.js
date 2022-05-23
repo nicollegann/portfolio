@@ -26,11 +26,11 @@ function AboutMe() {
                         </div>
                         <div className='flex flex-col lg:mt-28 lg:mb-20'>
                             <h1 className='mb-10 text-xl font-semibold'>
-                                Hey there! My name is <span className='text-indigo-900'>Nicolle Gan</span> (that's right, with double Ls!)
+                                Hey there! My name is <span className='text-indigo-900'>Nicolle Gan</span> (that&apos;s right, with double Ls!)
                             </h1>
                             <p className='text-left text-lg mb-5 flex-wrap sm:max-w-xl xl:max-w-2xl leading-loose'>
-                                I'm passionate about building things for the web and have an interest in exploring various technologies. 
-                                I'm always keen on learning new things and like to remain adaptable in my work.    
+                                I&apos;m passionate about building things for the web and have an interest in exploring various technologies. 
+                                I&apos;m always keen on learning new things and like to remain adaptable in my work.    
                                 I hope to be able to use technology to create meaning applications for the community and the world.
                             </p>
                         </div>

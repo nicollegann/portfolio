@@ -19,7 +19,7 @@ function HeroSection() {
                     <div className='flex'>
                         <div className='flex flex-col md:mt-7 lg:mt-16 justify-center'>
                             <h1 className='font-bold text-7xl text-left mb-10'>
-                                Hi, I'm <span className='text-indigo-900'>Nicolle</span>
+                                Hi, I&apos;m <span className='text-indigo-900'>Nicolle</span>
                             </h1>
                             <p className='text-left text-xl mb-3 flex-wrap leading-relaxed'>
                                 Computer Science student from the National University of Singapore. <br/> 
@@ -28,10 +28,10 @@ function HeroSection() {
                                 Hoping to create an impact on the community - and the world - through technology.
                             </p>
                             <div className='flex justify-left'>
-                                <a href='https://github.com/nicollegann' target='_blank'>
+                                <a href='https://github.com/nicollegann' target='_blank' rel='noreferrer'>
                                     <AiFillGithub className='hero-icons'/>
                                 </a>
-                                <a href='https://github.com/nicollegann' target='_blank'>
+                                <a href='https://github.com/nicollegann' target='_blank' rel='noreferrer'>
                                     <AiFillLinkedin className='hero-icons'/>
                                 </a>
                             </div>

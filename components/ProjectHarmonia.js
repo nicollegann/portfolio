@@ -69,10 +69,10 @@ function ProjectHarmonia() {
                                     </h3>
                                     <button 
                                         type='button' 
-                                        class='project-modal-button'
+                                        className='project-modal-button'
                                         onClick={() => setShowModal(false)}
                                     >
-                                        <svg className='w-5 h-5' fill='currentColor' viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"></path></svg>  
+                                        <svg className='w-5 h-5' fill='currentColor' viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"></path></svg>  
                                     </button>
                                 </div>
                                 <div className='flex gap-10'>
@@ -87,7 +87,7 @@ function ProjectHarmonia() {
                                 </div>
                                 <div className='space-y-6 mb-12 leading-relaxed text-gray-700 text-justify'>
                                     <p>
-                                        <span className='font-bold'>Harmonia</span> is a desktop application for managing tasks related to students' academic life, optimized for use via a Command Line Interface (CLI) 
+                                        <span className='font-bold'>Harmonia</span> is a desktop application for managing tasks related to students&apos; academic life, optimized for use via a Command Line Interface (CLI) 
                                         while still having the benefits of a Graphical User Interface (GUI). The application is designed for users who prefer typing. If you can type fast, Harmonia can get your task 
                                         management done faster than traditional GUI-based task managers.
                                     </p>
@@ -96,19 +96,19 @@ function ProjectHarmonia() {
                                     </p>
                                 </div>
                                 <div className='flex flex-wrap gap-5'>
-                                    <a href='https://github.com/AY2122S2-CS2103T-T09-1/tp/releases' target='_blank' className='project-modal-link-button'>
+                                    <a href='https://github.com/AY2122S2-CS2103T-T09-1/tp/releases' target='_blank' rel='noreferrer' className='project-modal-link-button'>
                                         <FaLaptopCode className='mr-2 text-gray-700' />
                                         Download JAR
                                     </a>
-                                    <a href='https://github.com/AY2122S2-CS2103T-T09-1/tp' target='_blank' className='project-modal-link-button'>
+                                    <a href='https://github.com/AY2122S2-CS2103T-T09-1/tp' target='_blank' rel='noreferrer' className='project-modal-link-button'>
                                         <SiGithub className='mr-2 text-gray-700' />
                                         Github
                                     </a>
-                                    <a href='https://ay2122s2-cs2103t-t09-1.github.io/tp/UserGuide.html' target='_blank' className='project-modal-link-button'>
+                                    <a href='https://ay2122s2-cs2103t-t09-1.github.io/tp/UserGuide.html' target='_blank' rel='noreferrer' className='project-modal-link-button'>
                                         <GrDocument className='mr-2 text-gray-700' />
                                         User Guide
                                     </a>
-                                    <a href='https://ay2122s2-cs2103t-t09-1.github.io/tp/DeveloperGuide.html' target='_blank' className='project-modal-link-button'>
+                                    <a href='https://ay2122s2-cs2103t-t09-1.github.io/tp/DeveloperGuide.html' target='_blank' rel='noreferrer' className='project-modal-link-button'>
                                         <GrDocument className='mr-2 text-gray-700' />
                                         Developer Guide
                                     </a>

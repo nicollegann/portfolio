@@ -85,9 +85,9 @@ function Contact() {
                     <p className='text-sm uppercase text-gray-400 select-none'>Get in Touch</p>
                     <h1 className='text-indigo-900 text-6xl font-bold text-center mb-5 select-none'>Contact</h1>
                     <p className='text-lg mb-5 mx-5 leading-loose text-gray-600 text-center'>
-                        I'd love to hear from you! 
+                        I&apos;d love to hear from you! 
                         Let me know your thoughts about my projects or how I can contribute to yours. 
-                        Drop me a message and I'll get back to you soon :D 
+                        Drop me a message and I&apos;ll get back to you soon :D 
                     </p>
 
                     <div className='w-5/6 flex flex-col my-5 justify-center text-center'>
