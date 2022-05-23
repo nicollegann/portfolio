@@ -3,17 +3,20 @@
 @tailwind utilities;
 
 @layer components {
+    /* Navbar */
     .nav-link {
-        @apply cursor-pointer font-semibold hover:text-indigo-600 px-3 py-2
+        @apply cursor-pointer font-semibold hover:text-indigo-700 px-3 py-2
     }
     .nav-link-mobile {
         @apply cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium
     }
     
+    /* Hero Section */
     .hero-icons {
-        @apply w-10 h-10 text-gray-500 hover:text-indigo-800 cursor-pointer mr-10
+        @apply w-10 h-10 text-gray-600 hover:text-indigo-800 cursor-pointer mr-10
     }
 
+    /* About Me Section */
     .icon {
         @apply w-10 h-10 bg-gray-100 text-gray-600 m-3 p-1 shadow-xl rounded-md
     }
@@ -24,6 +27,36 @@
         @apply flex justify-center items-center cursor-pointer
     }
     
+    /* Projects Section */
+    .project-card {
+        @apply w-4/5 max-w-xs rounded-lg sm:mb-5 cursor-pointer shadow-md hover:shadow-2xl hover:opacity-90
+    }
+    .project-card-description {
+        @apply h-40 px-5 pt-5 bg-neutral-50 rounded-b-lg text-justify
+    }
+    .project-card-techstacks {
+        @apply flex flex-wrap px-4 pb-4 gap-3 rounded-b-lg justify-center items-end bg-neutral-50
+    }
+    .project-label {
+        @apply flex text-sm rounded-md bg-indigo-100 px-2 py-1 items-center
+    }
+    .project-label-icon {
+        @apply mr-1 text-gray-600
+    }
+    .project-modal {
+        @apply rounded-lg shadow-lg relative flex flex-col w-full pt-6 pb-8 px-5 md:px-14 bg-slate-100 outline-none focus:outline-none
+    }
+    .project-modal-header {
+        @apply flex items-center justify-between md:pl-10 pb-2 mb-5 rounded-t border-b-2 border-slate-500
+    }
+    .project-modal-button {
+        @apply text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center
+    }
+    .project-modal-link-button {
+        @apply flex items-center px-3 py-1 rounded-lg font-semibold text-gray-800 bg-indigo-200 hover:text-gray-800 hover:bg-indigo-300
+    }
+
+    /* Contact Section */
     .contact-label {
         @apply block text-left pl-6 font-medium text-slate-700
     }

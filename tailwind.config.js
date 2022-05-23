@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       screens: {
         'sm': '500px',
+      },
+      blur: {
+        'xs': '1px'
       }
     },
   },
