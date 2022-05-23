@@ -65,7 +65,7 @@ function ProjectPortfolio() {
             {showModal ? (
                 <>
                     <div className='flex justify-center items-center overflow-y-auto fixed inset-0 z-50 transition-all duration-700 hover:bg-gray-700 hover:bg-opacity-20'>
-                        <div className='w-2/3 h-full'>
+                        <div className='w-5/6 md:w-2/3 h-full'>
                             <div className='project-modal my-32'>
                                 <div className='project-modal-header'>
                                     <h3 className='xs:text-xl md:text-3xl font-semibold text-gray-900'>
@@ -85,7 +85,7 @@ function ProjectPortfolio() {
                                     </p>
                                 </div>
                                 <div className='flex flex-wrap gap-5'>
-                                    <a href='https://portfolio-nicollegann.vercel.app/' target='_blank' rel='noreferrer' className='project-modal-link-button'>
+                                    <a href='https://github.com/nicollegann/portfolio' target='_blank' rel='noreferrer' className='project-modal-link-button'>
                                         <SiGithub className='mr-2 text-gray-700' />
                                         Github
                                     </a>

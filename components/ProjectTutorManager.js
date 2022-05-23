@@ -72,7 +72,7 @@ function ProjectTutorManager() {
             {showModal ? (
                 <>
                     <div className='flex justify-center items-center overflow-auto overscroll-contain fixed inset-0 z-50 outline-none focus:outline-none transition-all duration-700 hover:bg-gray-700 hover:bg-opacity-20'>
-                        <div className='w-2/3 h-screen'>
+                        <div className='w-5/6 md:w-2/3 h-screen'>
                             <div className='project-modal mt-10'>
                                 <div className='project-modal-header'>
                                     <h3 className='sm:text-xl md:text-3xl font-semibold text-gray-900'>
