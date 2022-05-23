@@ -18,13 +18,13 @@ function HeroSection() {
                 <div className='w-3/4 mx-auto justify-center items-center text-center pt-10 lg:pt-20'>
                     <div className='flex'>
                         <div className='flex flex-col md:mt-7 lg:mt-16 justify-center'>
-                            <h1 className='font-bold text-7xl text-left mb-10 selection:bg-indigo-200'>
+                            <h1 className='font-bold text-7xl text-left mb-10'>
                                 Hi, I'm <span className='text-indigo-900'>Nicolle</span>
                             </h1>
-                            <p className='text-left text-xl mb-3 flex-wrap selection:bg-indigo-200 leading-relaxed'>
+                            <p className='text-left text-xl mb-3 flex-wrap leading-relaxed'>
                                 Computer Science student from the National University of Singapore. <br/> 
                             </p>
-                            <p className='text-left text-xl mb-10 flex-wrap selection:bg-indigo-200 leading-relaxed'>
+                            <p className='text-left text-xl mb-10 flex-wrap leading-relaxed'>
                                 Hoping to create an impact on the community - and the world - through technology.
                             </p>
                             <div className='flex justify-left'>

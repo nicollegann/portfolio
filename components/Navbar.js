@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Transition } from '@headlessui/react'; // for smooth transition between elements
 import { Link } from 'react-scroll'; // for smooth scrolling
 import { BiMessageDetail } from 'react-icons/bi'; 
+import { FaSeedling } from 'react-icons/fa'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,12 @@ function Navbar() {
                                 smooth={true} 
                                 offset={-50} 
                                 duration={500} 
-                                className='nav-link'
+                                className='nav-link flex items-center'
                             >
-                            <h1 className='font-bold text-xl cursor-pointer'>
-                                Nic.
-                            </h1>
+                                <FaSeedling className='mr-2' />
+                                <h1 className='font-bold text-xl cursor-pointer'>
+                                    Nic.
+                                </h1>
                             </Link>
                             </div>
                             
@@ -79,11 +81,11 @@ function Navbar() {
                         </div>
 
                         {/* expandable menu for mobile screens */}
-                        <div className='mr-14 flex md:hidden'>
+                        <div className='mr-8 flex md:hidden'>
                             <button 
                                 onClick={() => setIsOpen(!isOpen)} 
                                 type='button' 
-                                className='bg-blue-600 inline-flex items-centerjustify-center p-2 rounded-md text-white hover:bg-black focus:outline-none focus:ring-white' 
+                                className='bg-indigo-700 inline-flex items-centerjustify-center p-2 rounded-md text-white hover:bg-black focus:outline-none focus:ring-white' 
                                 aria-controls='mobile-menu' 
                                 aria-expanded='false'
                             >
