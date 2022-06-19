@@ -11,7 +11,7 @@ function Footer() {
                 </div>
                 <div className='flex justify-center items-center'>
                     <FaPaintBrush className='text-blue-900 mr-2 w-3 h-3'/>
-                    <h1 className='text-sm text-blue-900'>Illustrations by <a href='https://www.instagram.com/artzy.w/' target='_blank' className='cursor-pointer font-semibold text-indigo-900 hover:text-black'>@artzy.w</a></h1>
+                    <h1 className='text-sm text-blue-900'>Illustrations by <a href='https://www.instagram.com/artzy.w/' target='_blank' rel='noreferrer' className='cursor-pointer font-semibold text-indigo-900 hover:text-black'>@artzy.w</a></h1>
                 </div>
             </div>
         </div>
