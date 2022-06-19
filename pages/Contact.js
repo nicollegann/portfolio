@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
 import { FiSend } from 'react-icons/fi';
+import Image from 'next/image';
+import contactImage from '../public/images/girl-front.jpg';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -81,17 +83,20 @@ function Contact() {
     return (
         <Element id='contact' name='contact'>
             <div>
-                <div className='sm:w-3/4 md:w-7/12 mx-auto mt-36 mb-32 flex flex-col justify-center items-center'>
+                <div className='sm:w-3/4 md:w-3/4 mx-auto mt-36 mb-32 flex flex-col justify-center items-center'>
                     <p className='text-sm uppercase text-gray-400 select-none'>Get in Touch</p>
                     <h1 className='text-indigo-900 text-6xl font-bold text-center mb-5 select-none'>Contact</h1>
                     <p className='text-lg mb-5 mx-5 leading-loose text-gray-600 text-center'>
                         I&apos;d love to hear from you! 
-                        Let me know your thoughts about my projects or how I can contribute to yours. 
+                        Let me know your thoughts about my projects or how I can contribute to yours.<br /> 
                         Drop me a message and I&apos;ll get back to you soon :D 
                     </p>
-
-                    <div className='w-5/6 flex flex-col my-5 justify-center text-center'>
-                        <form>
+                    
+                    <div className='w-11/12 flex flex-row'>
+                        <div className='w-1/5 my-auto hidden lg:block'>
+                            <Image src={contactImage} alt='contactImage' layout='intrinsic' className='hidden lg:block' />
+                        </div>
+                        <form className='sm:w-11/12 lg:w-3/5 flex flex-col my-5 mx-auto justify-center text-center lg:ml-16'>
                             <div className='w-full mb-6'>
                                 <label htmlFor='name' className='block'>
                                     <span className='contact-label'>Name</span>
@@ -156,16 +161,19 @@ function Contact() {
                                     <p className="contact-error">Message body cannot be empty.</p>
                                 )}
                             </div>
-                            <button 
-                                type='submit'
-                                className='font-medium rounded-md mt-5 w-32 h-10 bg-indigo-900 text-white hover:bg-indigo-800'
-                                onClick={handleSubmit}
-                            >
-                                <div className='flex justify-center'>
-                                    <FiSend className='w-5 h-5 text-gray-50 mr-2 my-auto' />
-                                    {buttonText}
-                                </div>
-                            </button>
+
+                            <div>
+                                <button 
+                                    type='submit'
+                                    className='font-medium rounded-md mt-5 w-32 h-10 bg-indigo-900 text-white hover:bg-indigo-800'
+                                    onClick={handleSubmit}
+                                >
+                                    <div className='flex justify-center'>
+                                        <FiSend className='w-5 h-5 text-gray-50 mr-2 my-auto' />
+                                        {buttonText}
+                                    </div>
+                                </button>
+                            </div>
                         </form>
                         {showSuccessMessage  && 
                             <div className='p-2 mt-4 text-teal-800 bg-teal-100 rounded-lg'>
@@ -177,7 +185,7 @@ function Contact() {
                                 Error sending message. Please try again in a while!
                             </div>
                         }
-                    </div>
+                    </div>    
                 </div>
             </div>
         </Element>
