@@ -1,4 +1,5 @@
 import { Element } from 'react-scroll';
+import Loader from '../components/Loader.js'
 import ProjectPortfolio from '../components/ProjectPortfolio'
 import ProjectTutorManager from '../components/ProjectTutorManager';
 import ProjectHarmonia from '../components/ProjectHarmonia';
@@ -6,16 +7,18 @@ import ProjectHarmonia from '../components/ProjectHarmonia';
 function Projects() {    
     return (
         <Element id='projects' name='projects'>
-            <div className='w-4/5 mx-auto my-36 flex flex-col justify-center items-center'>
-                <p className='text-sm uppercase text-gray-400 select-none'>My key projects</p>
-                <h1 className='text-indigo-900 text-6xl font-bold text-center select-none'>Projects</h1>
-                
-                <div className='w-full flex flex-wrap justify-center items-center gap-10 mt-10'>
-                    <ProjectPortfolio />
-                    <ProjectTutorManager />
-                    <ProjectHarmonia />
+            <Loader>
+                <div className='w-4/5 mx-auto my-36 flex flex-col justify-center items-center'>
+                    <p className='text-sm uppercase text-gray-400 select-none'>My key projects</p>
+                    <h1 className='text-indigo-900 text-6xl font-bold text-center select-none'>Projects</h1>
+                    
+                    <div className='w-full flex flex-wrap justify-center items-center gap-10 mt-10'>
+                        <ProjectPortfolio />
+                        <ProjectTutorManager />
+                        <ProjectHarmonia />
+                    </div>
                 </div>
-            </div>
+            </Loader>
         </Element>
     );
 }
