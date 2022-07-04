@@ -33,7 +33,7 @@ function HeroSection() {
                                     <a href='https://github.com/nicollegann' target='_blank' rel='noreferrer'>
                                         <AiFillGithub className='hero-icons'/>
                                     </a>
-                                    <a href='https://github.com/nicollegann' target='_blank' rel='noreferrer'>
+                                    <a href='https://www.linkedin.com/in/nicolle-gan/' target='_blank' rel='noreferrer'>
                                         <AiFillLinkedin className='hero-icons'/>
                                     </a>
                                 </div>
