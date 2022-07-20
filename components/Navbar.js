@@ -8,7 +8,7 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div>
-            <nav className='fixed z-20 bg-white w-full'>
+            <nav className='fixed z-20 bg-neutral-100 w-full'>
                 <div className='w-full'>
                     <div className='flex items-center h-20 w-full'>
                         <div className='flex items-center sm:mx-10 md:mx-20 justify-between w-full'>
@@ -70,11 +70,11 @@ function Navbar() {
                                     smooth={true} 
                                     offset={-100}
                                     duration={500}
-                                    className='font-semibold text-lg cursor-pointer hidden md:block hover:bg-indigo-100'
+                                    className='font-semibold text-lg cursor-pointer hidden md:block hover:bg-neutral-200'
                                 >
                                     <div className='flex'>
                                         <BiMessageDetail className='w-5 h-5 text-black mr-1 my-auto'/>
-                                        Say<span className='text-indigo-600'>Hi</span>
+                                        Say<span className='text-brown-300'>Hi</span>
                                     </div>
                                 </Link>
                             </div>
@@ -85,7 +85,7 @@ function Navbar() {
                             <button 
                                 onClick={() => setIsOpen(!isOpen)} 
                                 type='button' 
-                                className='bg-indigo-700 inline-flex items-centerjustify-center p-2 rounded-md text-white hover:bg-black focus:outline-none focus:ring-white' 
+                                className='bg-brown-200 inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-brown-200 focus:outline-none focus:ring-white' 
                                 aria-controls='mobile-menu' 
                                 aria-expanded='false'
                             >
@@ -138,7 +138,7 @@ function Navbar() {
                 >
                     {(ref) => (
                         <div className='md:hidden' id='mobile-menu'>
-                            <div ref={ref} className='bg-white mx-4 mr-20 pt-4 pb-4 space-y-1'>
+                            <div ref={ref} className='bg-neutral-200 mx-8 pt-4 pb-4 space-y-1'>
                                 <Link 
                                     href='/home' 
                                     activeClass='home' 

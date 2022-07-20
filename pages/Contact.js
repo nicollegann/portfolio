@@ -3,7 +3,7 @@ import { Element } from 'react-scroll';
 import Loader from '../components/Loader.js'
 import { FiSend } from 'react-icons/fi';
 import Image from 'next/image';
-import contactImage from '../public/images/girl-front.jpg';
+import contactImage from '../public/images/girl-front-with-full-bg.png';
 
 function Contact() {
     const [name, setName] = useState('');
@@ -86,16 +86,16 @@ function Contact() {
             <Loader>
                 <div>
                     <div className='sm:w-3/4 md:w-3/4 mx-auto mt-36 mb-32 flex flex-col justify-center items-center'>
-                        <p className='text-sm uppercase text-gray-400 select-none'>Get in Touch</p>
-                        <h1 className='text-indigo-900 text-6xl font-bold text-center mb-5 select-none'>Contact</h1>
-                        <p className='text-lg mb-5 mx-5 leading-loose text-gray-600 text-center'>
+                        <p className='text-sm uppercase text-brown-200 select-none'>Get in Touch</p>
+                        <h1 className='text-brown-300 text-6xl font-bold text-center mb-5 select-none'>Contact</h1>
+                        <p className='text-lg mb-5 mx-5 leading-loose text-center'>
                             I&apos;d love to hear from you! 
                             Let me know your thoughts about my projects or how I can contribute to yours.<br /> 
                             Drop me a message and I&apos;ll get back to you soon :D 
                         </p>
                         
                         <div className='w-11/12 flex flex-row'>
-                            <div className='w-1/5 my-auto hidden lg:block'>
+                            <div className='w-1/4 my-auto hidden lg:block'>
                                 <Image src={contactImage} alt='contactImage' layout='intrinsic' className='hidden lg:block' />
                             </div>
                             <form className='sm:w-11/12 lg:w-3/5 flex flex-col my-5 mx-auto justify-center text-center lg:ml-16'>
@@ -167,7 +167,7 @@ function Contact() {
                                 <div>
                                     <button 
                                         type='submit'
-                                        className='font-medium rounded-md mt-5 w-32 h-10 bg-indigo-900 text-white hover:bg-indigo-800'
+                                        className='font-medium rounded-md mt-5 w-32 h-10 bg-brown-200 text-white hover:bg-brown-100'
                                         onClick={handleSubmit}
                                     >
                                         <div className='flex justify-center'>

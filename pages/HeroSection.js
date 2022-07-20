@@ -2,7 +2,7 @@ import React from 'react';
 import { Element } from 'react-scroll';
 import Loader from '../components/Loader.js'
 import Image from 'next/image';
-import heroImage from '../public/images/csgirl.jpg';
+import heroImage from '../public/images/csgirl-with-full-bg.png';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
 function HeroSection() {
@@ -17,11 +17,11 @@ function HeroSection() {
                         </div>
                     </div>
 
-                    <div className='w-3/4 mx-auto justify-center items-center text-center pt-10 lg:pt-20'>
+                    <div className='w-5/6 mx-auto justify-center items-center text-center pt-10 lg:pt-20'>
                         <div className='flex'>
                             <div className='flex flex-col md:mt-7 lg:mt-16 justify-center'>
                                 <h1 className='font-bold text-7xl text-left mb-10'>
-                                    Hi, I&apos;m <span className='text-indigo-900'>Nicolle</span>
+                                    Hi, I&apos;m <span className='text-brown-200'>Nicolle</span>
                                 </h1>
                                 <p className='text-left text-xl mb-3 flex-wrap leading-relaxed'>
                                     Computer Science student from the National University of Singapore. <br/> 

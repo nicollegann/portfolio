@@ -21,7 +21,7 @@ function ProjectTutorManager() {
                 {mouseOver ? (
                     <>
                         <div className='grid grid-cols-1 grid-rows-1'>
-                            <div className='rounded-t-lg opacity-15 brightness-50 blur-xs'>
+                            <div className='rounded-t-lg opacity-15 grayscale contrast-50 blur-xs'>
                                 <Image 
                                     src={TutorManagerScreenshot} 
                                     alt='tutor-manager'
@@ -30,8 +30,8 @@ function ProjectTutorManager() {
                                 />
                             </div>
                             <div className='absolute self-center justify-self-center text-center'>
-                                <p className='font-bold text-lg text-indigo-50'>TUTORMANAGER</p>
-                                <p className='font-semibold text-sm text-gray-300'>View Project</p>
+                                <p className='font-bold text-lg text-brown-300 bg-cream-100'>TUTORMANAGER</p>
+                                <p className='font-semibold text-sm text-neutral-300 bg-brown-100'>View Project</p>
                             </div>
                         </div>
                     </>

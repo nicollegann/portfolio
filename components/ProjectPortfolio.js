@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import PortfolioScreenshot from '../public/images/portfolio-screenshot-crop.png';
+import PortfolioScreenshot from '../public/images/portfolio-resized.png';
 import { SiNextdotjs, SiTailwindcss, SiGithub } from 'react-icons/si';
 
 function ProjectPortfolio() {
@@ -18,7 +18,7 @@ function ProjectPortfolio() {
                 {mouseOver ? (
                     <>
                         <div className='grid grid-cols-1 grid-rows-1'>
-                            <div className='rounded-t-lg opacity-15 brightness-50 blur-xs'>
+                            <div className='rounded-t-lg opacity-15 grayscale contrast-50 blur-xs'>
                                 <Image 
                                     src={PortfolioScreenshot} 
                                     alt='portfolio' 
@@ -27,8 +27,8 @@ function ProjectPortfolio() {
                                 />
                             </div>
                             <div className='absolute self-center justify-self-center text-center hidden sm:block'>
-                                <p className='font-bold text-lg text-indigo-50'>PORTFOLIO</p>
-                                <p className='font-semibold text-sm text-gray-300'>View Project</p>
+                                <p className='font-bold text-lg text-brown-300 bg-cream-100'>PORTFOLIO</p>
+                                <p className='font-semibold text-sm text-neutral-300 bg-brown-100'>View Project</p>
                             </div>
                         </div>
                     </>
@@ -48,6 +48,9 @@ function ProjectPortfolio() {
                 <div className='project-card-description'>
                     <p>
                         You are viewing this now!
+                    </p>
+                    <p className='mt-4'>
+                        A personal portfolio to learn more about me and my works.
                     </p>
                 </div>
                 <div className='project-card-techstacks'>
@@ -81,7 +84,7 @@ function ProjectPortfolio() {
                                 </div>
                                 <div className='space-y-6 mb-12'>
                                     <p className='text-base leading-relaxed text-gray-700'>
-                                        A personal website built from scratch using NextJS and styled with Tailwind CSS. This site aims to showcase the projects I have worked on, as well as for others to learn more about me as a web developer! 
+                                        A personal website built from scratch using NextJS and styled with Tailwind CSS. This site aims to showcase the projects I have worked on, as well as for you to learn more about me as a web developer! 
                                     </p>
                                 </div>
                                 <div className='flex flex-wrap gap-5'>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import HarmoniaScreenshotCropped from '../public/images/harmonia-screenshot-crop.png'
 import HarmoniaScreenshot from '../public/images/harmonia-screenshot.png';
+import { DiJava } from 'react-icons/di';
 import { SiGithub } from 'react-icons/si';
 import { FaLaptopCode } from 'react-icons/fa';
 import { GrDocument } from 'react-icons/gr';
@@ -21,7 +22,7 @@ function ProjectHarmonia() {
                 {mouseOver ? (
                     <>
                         <div className='grid grid-cols-1 grid-rows-1'>
-                            <div className='rounded-t-lg opacity-15 brightness-50 blur-xs'>
+                            <div className='rounded-t-lg opacity-15 grayscale contrast-50 blur-xs'>
                                 <Image 
                                     src={HarmoniaScreenshotCropped} 
                                     alt='harmonia'
@@ -30,8 +31,8 @@ function ProjectHarmonia() {
                                 />
                             </div>
                             <div className='absolute self-center justify-self-center text-center'>
-                                <p className='font-bold text-lg text-indigo-50'>HARMONIA</p>
-                                <p className='font-semibold text-sm text-gray-300'>View Project</p>
+                                <p className='font-bold text-lg text-brown-300 bg-cream-100'>HARMONIA</p>
+                                <p className='font-semibold text-sm text-neutral-300 bg-brown-100'>View Project</p>
                             </div>
                         </div>
                     </>
@@ -53,7 +54,10 @@ function ProjectHarmonia() {
                     </p>
                 </div>
                 <div className='project-card-techstacks'>
-                    <div className='project-label'>Java</div>
+                    <div className='project-label'>
+                        <DiJava className='project-label-icon text-xl' />
+                        Java
+                    </div>
                     <div className='project-label'>JavaFX</div>
                 </div>
             </div>
