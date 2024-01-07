@@ -93,12 +93,12 @@ function Contact() {
                             Let me know your thoughts about my projects or how I can contribute to yours.<br /> 
                             Drop me a message and I&apos;ll get back to you soon :D 
                         </p>
-                        
+
                         <div className='w-11/12 flex flex-row'>
                             <div className='w-1/4 my-auto hidden lg:block'>
                                 <Image src={contactImage} alt='contactImage' layout='intrinsic' className='hidden lg:block' />
                             </div>
-                            <form className='sm:w-11/12 lg:w-3/5 flex flex-col my-5 mx-auto justify-center text-start lg:ml-16'>
+                            <form className='sm:w-11/12 lg:w-3/5 flex flex-col my-5 mx-auto justify-center text-start lg:ml-16'>                                    
                                 <div className='w-full mb-6'>
                                     <label htmlFor='name' className='block'>
                                         <span className='contact-label'>Name</span>
@@ -176,17 +176,18 @@ function Contact() {
                                         </div>
                                     </button>
                                 </div>
+
+                                {showSuccessMessage  && 
+                                    <div className='p-2 mt-4 text-teal-800 bg-teal-100 rounded-lg'>
+                                        Message sent successfully!
+                                    </div> 
+                                }
+                                {showFailureMessage && 
+                                    <div className='p-2 mt-4 text-red-800 bg-red-100 rounded-lg'>
+                                        Error sending message. Please try again in a while!
+                                    </div>
+                                }
                             </form>
-                            {showSuccessMessage  && 
-                                <div className='p-2 mt-4 text-teal-800 bg-teal-100 rounded-lg'>
-                                    Message sent successfully!
-                                </div> 
-                            }
-                            {showFailureMessage && 
-                                <div className='p-2 mt-4 text-red-800 bg-red-100 rounded-lg'>
-                                    Error sending message. Please try again in a while!
-                                </div>
-                            }
                         </div>    
                     </div>
                 </div>
