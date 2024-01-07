@@ -29,13 +29,13 @@
     
     /* Projects Section */
     .project-card {
-        @apply w-4/5 max-w-xs rounded-lg sm:mb-5 cursor-pointer shadow-md hover:shadow-2xl  hover:bg-cream-100 bg-neutral-300
+        @apply w-4/5 max-w-xs rounded-lg sm:mb-5 cursor-pointer shadow-md hover:shadow-2xl  hover:bg-cream-100 bg-white
     }
     .project-card-description {
         @apply h-40 px-5 pt-5 rounded-b-lg text-justify
     }
     .project-card-techstacks {
-        @apply flex flex-wrap px-4 pb-4 gap-3 rounded-b-lg justify-center items-end
+        @apply flex flex-wrap px-4 pb-4 gap-2 rounded-b-lg justify-center items-end
     }
     .project-label {
         @apply flex text-sm rounded-md bg-neutral-200 px-2 py-1 items-center
@@ -58,7 +58,7 @@
 
     /* Contact Section */
     .contact-label {
-        @apply block text-left pl-6 font-medium text-slate-700
+        @apply block text-left p-1 font-medium text-slate-700
     }
     .contact-field {
         @apply w-full h-10 rounded-md text-gray-800 text-base pl-6 border-2 border-brown-200 focus:outline-brown-100 bg-neutral-300

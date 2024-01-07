@@ -98,7 +98,7 @@ function Contact() {
                             <div className='w-1/4 my-auto hidden lg:block'>
                                 <Image src={contactImage} alt='contactImage' layout='intrinsic' className='hidden lg:block' />
                             </div>
-                            <form className='sm:w-11/12 lg:w-3/5 flex flex-col my-5 mx-auto justify-center text-center lg:ml-16'>
+                            <form className='sm:w-11/12 lg:w-3/5 flex flex-col my-5 mx-auto justify-center text-start lg:ml-16'>
                                 <div className='w-full mb-6'>
                                     <label htmlFor='name' className='block'>
                                         <span className='contact-label'>Name</span>
@@ -167,7 +167,7 @@ function Contact() {
                                 <div>
                                     <button 
                                         type='submit'
-                                        className='font-medium rounded-md mt-5 w-32 h-10 bg-brown-200 text-white hover:bg-brown-100'
+                                        className='font-medium rounded-md mt-5 w-28 h-10 bg-brown-200 text-white hover:bg-brown-100'
                                         onClick={handleSubmit}
                                     >
                                         <div className='flex justify-center'>
