@@ -3,7 +3,7 @@ import Loader from '../components/Loader.js'
 import Image from 'next/image';
 import profilePic from '../public/images/profilepic.png';
 import { DiJava, DiJavascript1, DiPython, DiReact, DiPostgresql } from 'react-icons/di';
-import { SiNextdotjs, SiHtml5, SiCss3 } from 'react-icons/si';
+import { SiNextdotjs, SiHtml5, SiCss3, SiDjango } from 'react-icons/si';
 
 function AboutMe() {
     return (
@@ -70,6 +70,10 @@ function AboutMe() {
                             <div className='icon-label-set'>
                                 <SiNextdotjs className='icon' />
                                 <h2 className='icon-label'>NextJS</h2>
+                            </div>
+                            <div className='icon-label-set'>
+                                <SiDjango className='icon' />
+                                <h2 className='icon-label'>Django</h2>
                             </div>
                             <div className='icon-label-set'>
                                 <SiHtml5 className='icon' />

@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import HeroSection from './HeroSection'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
+import Certifications from './Certifications'
 import Contact from './Contact'
 import Footer from '../components/Footer'
 
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection />
       <AboutMe />
       <Projects />
+      <Certifications />
       <Contact />
       <Footer />
 

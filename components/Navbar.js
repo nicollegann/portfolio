@@ -60,6 +60,16 @@ function Navbar() {
                                     >
                                         Projects
                                     </Link>
+                                    <Link 
+                                        activeClass='certifications' 
+                                        to='certifications' 
+                                        smooth={true} 
+                                        offset={-100} 
+                                        duration={500} 
+                                        className='nav-link'
+                                    >
+                                        Certifications
+                                    </Link>
                                 </div>
                             </div>
 
@@ -171,6 +181,17 @@ function Navbar() {
                                     className='nav-link-mobile'
                                 >
                                     Projects
+                                </Link>
+                                <Link 
+                                    href='/certifications' 
+                                    activeClass='certifications' 
+                                    to='certifications' 
+                                    smooth={true} 
+                                    offset={-100}
+                                    duration={500}
+                                    className='nav-link-mobile'
+                                >
+                                    Certifications
                                 </Link>
                                 <Link 
                                     activeClass='contact' 

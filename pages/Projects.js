@@ -1,7 +1,8 @@
 import { Element } from 'react-scroll';
-import Loader from '../components/Loader.js'
-import ProjectPortfolio from '../components/ProjectPortfolio'
+import Loader from '../components/Loader.js';
+import ProjectPortfolio from '../components/ProjectPortfolio';
 import ProjectTutorManager from '../components/ProjectTutorManager';
+import ProjectTutorManagerV2 from '../components/ProjectTutorManagerV2';
 import ProjectHarmonia from '../components/ProjectHarmonia';
 
 function Projects() {    
@@ -15,6 +16,7 @@ function Projects() {
                     <div className='w-full flex flex-wrap justify-center items-center gap-10 mt-10'>
                         <ProjectPortfolio />
                         <ProjectTutorManager />
+                        <ProjectTutorManagerV2 />
                         <ProjectHarmonia />
                     </div>
                 </div>
