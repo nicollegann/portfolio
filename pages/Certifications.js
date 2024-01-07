@@ -9,13 +9,13 @@ function Certifications() {
                     <p className='text-md uppercase text-brown-200 select-none'>Verified Skills</p>
                     <h1 className='text-brown-300 text-6xl font-bold text-center select-none'>Certifications</h1>
                     
-                    <div class="w-1/2 min-w-fit py-3 justify-center items-center mt-10 rounded-lg shadow bg-white dark:bg-gray-80">
+                    <div className="w-1/2 min-w-fit py-3 justify-center items-center mt-10 rounded-lg shadow bg-white dark:bg-gray-80">
                         <ul role="list" className="divide-y px-5 divide-gray-200 dark:divide-gray-700">
-                            <li class="py-3">
+                            <li className="py-3">
                                 <div>
                                     <div className="flex justify-between items-center">
-                                        <div className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">CS50's Web Programming with Python and JavaScript</div>
-                                        <a href='https://courses.edx.org/certificates/6e9dd424b4eb4a0295e9153f89af08d4' target='_blank' rel='noreferrer' class='text-sm font-medium text-blue-700 hover:underline dark:text-blue-500'>
+                                        <div className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">CS50 Web Programming with Python and JavaScript</div>
+                                        <a href='https://courses.edx.org/certificates/6e9dd424b4eb4a0295e9153f89af08d4' target='_blank' rel='noreferrer' className='text-sm font-medium text-blue-700 hover:underline dark:text-blue-500'>
                                             View Certificate
                                         </a>
                                     </div>
