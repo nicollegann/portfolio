@@ -6,7 +6,7 @@ import Image from 'next/image';
 import contactImage from '../public/images/girl-front-with-full-bg.png';
 
 function Contact() {
-    const [name, setName] = useState('');
+    /*const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
@@ -79,7 +79,7 @@ function Contact() {
             setButtonText('Send');
         }   
         console.log(name, email, subject, message);
-    };
+    };*/
 
     return (
         <Element id='contact' name='contact'>
@@ -88,13 +88,21 @@ function Contact() {
                     <div className='sm:w-3/4 md:w-3/4 mx-auto mt-36 mb-32 flex flex-col justify-center items-center'>
                         <p className='text-sm uppercase text-brown-200 select-none'>Get in Touch</p>
                         <h1 className='text-brown-300 text-6xl font-bold text-center mb-5 select-none'>Contact</h1>
-                        <p className='text-lg mb-5 mx-5 leading-loose text-center'>
-                            I&apos;d love to hear from you! 
-                            Let me know your thoughts about my projects or how I can contribute to yours.<br /> 
-                            Drop me a message and I&apos;ll get back to you soon :D 
-                        </p>
+                        
+                        <div className='w-9/12 flex flex-row justify-center'>
+                            <div className='w-1/4 my-auto hidden lg:block'>
+                                <Image src={contactImage} alt='contactImage' layout='intrinsic' className='hidden lg:block' />
+                            </div>
+                        
+                            <div className='text-xl w-3/5 mt-24 leading-loose text-center'>
+                                <div className='text-3xl font-semibold mb-8'>I&apos;d love to hear from you!</div>
+                                Let me know your thoughts about my projects<br/>
+                                or how I can contribute to yours.<br /> 
+                                Drop me a message and I&apos;ll get back to you soon :D 
+                            </div>
+                        </div>
 
-                        <div className='w-11/12 flex flex-row'>
+                        {/* <div className='w-11/12 flex flex-row'>
                             <div className='w-1/4 my-auto hidden lg:block'>
                                 <Image src={contactImage} alt='contactImage' layout='intrinsic' className='hidden lg:block' />
                             </div>
@@ -188,7 +196,7 @@ function Contact() {
                                     </div>
                                 }
                             </form>
-                        </div>    
+                        </div>     */}
                     </div>
                 </div>
             </Loader>
